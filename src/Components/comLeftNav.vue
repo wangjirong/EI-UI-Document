@@ -213,6 +213,9 @@ export default {
     color: #409eff;
   }
 }
+.router-link-exact-active{
+    color: #409eff;
+}
 .com-header {
   color: #333;
   font-size: 1.2em;
