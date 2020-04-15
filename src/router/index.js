@@ -10,7 +10,14 @@ const routes = [ {
 }, {
   path: '/component',
   name: 'Component',
-  component: ()=>import('../Menu/Compoent')
+  component: ()=>import('../Menu/Compoent'),
+  children:[
+    {
+      path: '/component/button',
+      name: 'Button',
+      component: ()=>import('../Menu/Basic/Button'),
+    }
+  ]
 }, {
   path: '/theme',
   name: 'Theme',
