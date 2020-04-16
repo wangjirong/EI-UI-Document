@@ -1,13 +1,13 @@
 <template>
   <div id="component" class="flex-vertical-start">
       <leftNav/>
-      <router-view></router-view>
+      <router-view class="routerview"></router-view>
   </div>
 </template>
 
 <script>
 export default {
-    name:"component",
+    name:"components",
     components:{
         leftNav:()=>import('../Components/comLeftNav')
     }
@@ -16,6 +16,8 @@ export default {
 
 <style lang="less" scoped>
 #component{
-
+.routerview{
+    margin-left: 25vw;
+}
 }
 </style>

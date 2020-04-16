@@ -1,7 +1,7 @@
 <template>
   <div id="comLeftNav">
     <ul class="develop-guide flex-column-start">
-      <li class="com-header item">开发指南</li>
+      <li class=" item com-nav-title">开发指南</li>
       <li
         class="guide-item item"
         v-for="developGuideItem in developGuide"
@@ -11,7 +11,7 @@
       </li>
     </ul>
     <ul class="components flex-column-start">
-      <li class="com-header item">组件</li>
+      <li class="com-nav-title item">组件</li>
       <li
         class="component-item flex-column-start"
         v-for="component in components"
@@ -214,17 +214,18 @@ export default {
   }
 }
 .router-link-exact-active{
-    color: #409eff;
-}
-.com-header {
-  color: #333;
-  font-size: 1.2em;
+    color: #42b983;
 }
 .item {
   line-height: 3em;
 }
 #comLeftNav {
   padding: 1em;
+  height: 100vh;
+  overflow-y: scroll;
+  margin-left: 5vw;
+  width: 15vw;
+  position: fixed;
   .develop-guide {
     .guide-item {
     }

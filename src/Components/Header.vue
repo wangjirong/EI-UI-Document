@@ -1,4 +1,3 @@
-
 <template>
   <div id="Header">
       <ul class="menu flex-vertical-center">
